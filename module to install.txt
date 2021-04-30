@@ -1,0 +1,16 @@
+pyttsx3
+speech_recognition
+datetime
+pywhatkit
+os
+webbrowser
+pyautogui
+time
+speedtest
+requests
+PyPDF2
+translators as ts
+gtts
+install tkinter if not
+
+Get the pyaudio file download from respository
