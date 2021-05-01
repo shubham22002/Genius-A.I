@@ -11,7 +11,7 @@ from pywikihow import search_wikihow
 from bs4 import BeautifulSoup
 import requests
 import PyPDF2
-from tkinter.filedialog import *
+from tkinter.filedialog import *         #open file manager
 from gtts import gTTS
 import translators as ts
 
