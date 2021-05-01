@@ -233,6 +233,14 @@ while True:
     if 'time' in query:
         time = datetime.datetime.now().strftime('%I:%M %p') # speak time
         Speak('Current time is ' + time)
+        
+     if 'day' in query:
+        day = datetime.datetime.now().strftime("%A")
+        Speak(day)
+
+    if 'year' in query:
+        year = datetime.datetime.now()
+        Speak(year)
 
     if 'google' in query:
         query = query.replace("google", " ")   # speak google before search the anything
