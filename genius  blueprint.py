@@ -361,7 +361,7 @@ while True:
         else:
             break
 
-    if 'restart' in query:           # restarts the pc
+    if 'restart' in query:                       # restarts the pc
         Speak("Do you want to restart ?")
         vr = takecommand()
         if 'yes' in vr:
@@ -372,7 +372,7 @@ while True:
     if 'close window' in query:
         pyautogui.hotkey('alt', 'f4')
 
-    if 'close this tab' in query:      #automation of chrome
+    if 'close this tab' in query:                 #automation of chrome upto download query
         pyautogui.hotkey('ctrl', 'w')
 
     if 'open new tab' in query:
@@ -387,7 +387,7 @@ while True:
     if 'download' in query:
         pyautogui.hotkey('ctrl', 'j')
 
-    if 'clear chat' in query:         # clear all the chats
+    if 'clear chat' in query:                    # clear all the chats
         clear = lambda: os.system("cls")
         clear()
 
