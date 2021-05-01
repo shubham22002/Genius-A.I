@@ -1,0 +1,20 @@
+1.pyttsx3
+2.speech_recognition
+3.datetime
+4.pywhatkit
+5.os
+6.webbrowser
+7.pyautogui
+8.time
+9.speedtest
+10.requests
+11.PyPDF2
+12.translators 
+13.gtts
+14.bs4
+15.install tkinter if not
+16.Pyaudio 
+(note:before install the pyaudio on computer check your python version in cmd and download - https://www.lfd.uci.edu/~gohlke/pythonlibs/)
+eg.( Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  6 2021, 13:40:21) [MSC v.1928 64 bit (AMD64)] on win32)
+[MSC v.1928 64 bit (AMD64)] on win32 
+search on the above website (PyAudio‑0.2.11‑cp39‑cp39‑win_amd64.whl)
