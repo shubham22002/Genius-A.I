@@ -17,7 +17,8 @@ Use pip install command before module
 15.install tkinter if not
 16.smtplib
 17.getpass
-1.Pyaudio 
+18.Pyaudio 
+
 (note:before install the pyaudio on computer check your python version in cmd and download - https://www.lfd.uci.edu/~gohlke/pythonlibs/)
 eg.( Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  6 2021, 13:40:21) [MSC v.1928 64 bit (AMD64)] on win32)
 [MSC v.1928 64 bit (AMD64)] on win32 
