@@ -435,5 +435,7 @@ while True:
     if 'mail' in query:
         email()                      #calls email function
 
-
-
+    if 'screenshot' in query:               #takes screenshot
+        shot = pyautogui.screenshot()
+        save_path = asksaveasfilename()
+        shot.save(save_path + "screenshot.png")
