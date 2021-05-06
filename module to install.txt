@@ -23,3 +23,6 @@
 eg.( Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  6 2021, 13:40:21) [MSC v.1928 64 bit (AMD64)] on win32)
 [MSC v.1928 64 bit (AMD64)] on win32 
 search on the above website (PyAudio‑0.2.11‑cp39‑cp39‑win_amd64.whl)
+
+If your code is not working you have to uninstall python from pc settings and re-install python.
+Your code will run smoothly.( note: you have to reinstall the python module.)
