@@ -489,3 +489,29 @@ while True:
             Speak("Name the location")
             pyautogui.write(takecommand())
             pyautogui.press('enter')
+            
+    if'news' in query:
+        query =query.replace("news","")
+        url = (f"https://news.google.com/rss/search?q={query}")         # gets lastest news
+        s = HTMLSession()
+        r = s.get(url)
+        
+        for title in r.html.find('title'):
+            print(title.text)
+            
+    if "record" in query:                                               #records the video from webcam
+        video= cv2.VideoCapture(0)
+        width= int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
+        height= int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        writer= cv2.VideoWriter('Cam capture.mp4', cv2.VideoWriter_fourcc(*'DIVX'), 20, (width,height))
+
+        while True:
+            ret,frame= video.read()
+            writer.write(frame)
+            cv2.imshow('frame', frame)
+
+            if cv2.waitKey(1) & 0xFF == 27:
+                break
+        video.release()
+        writer.release()
+        cv2.destroyAllWindows()
