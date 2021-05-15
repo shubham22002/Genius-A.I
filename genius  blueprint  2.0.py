@@ -19,7 +19,6 @@ import smtplib
 from getpass import getpass
 import wolframalpha
 import cv2
-import json
 from requests_html import HTMLSession
 import subprocess
 
