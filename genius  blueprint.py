@@ -248,6 +248,23 @@ def Wolf():
         Speak(solution)
     except:
         Speak("Try again")
+ 
+def trans():
+    Speak("Speak to translate")
+    text = takecommand()
+    Speak("In which language")
+    lan = takecommand()
+    if 'hindi' in lan:
+        ty = gTTS(ts.google(text, from_language='en', to_language="hi"))     # you can add any language
+        ty.save(f"{text}.mp3")
+        playsound.playsound(f"{text}.mp3")
+        os.remove(f"{text}.mp3")
+    
+    if 'marathi' in lan:
+        ty = gTTS(ts.google(text, from_language='en', to_language="mr"))
+        ty.save(f"{text}.mp3")
+        playsound.playsound(f"{text}.mp3")
+        os.remove(f"{text}.mp3") 
 
 
 while True:
@@ -272,7 +289,10 @@ while True:
 
     if 'name' in query:
         Speak("My name is Genius")
-
+        
+    if 'translate' in query:                     # speak the the line to translate
+        trans()
+        
     if 'are you there' in query:
         Speak("Yes,sir")
 
